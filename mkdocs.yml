@@ -1,0 +1,15 @@
+site_name: Curriculum Vitae
+site_url: https://Tminor7.github.io/cv/
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.expand
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list
