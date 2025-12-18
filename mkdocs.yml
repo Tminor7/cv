@@ -1,15 +1,52 @@
-site_name: Curriculum Vitae
+site_name: Tomohiro Kikuchi
 site_url: https://Tminor7.github.io/cv/
+site_author: Tomohiro Kikuchi
+
 theme:
   name: material
   language: ja
   features:
     - navigation.expand
-  palette:
-    scheme: default
-    primary: indigo
-    accent: indigo
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+  palette: 
+    # ライトモード（通常）
+    - scheme: default
+      primary: teal 
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: ダークモードへ切り替え
+    # ダークモード
+    - scheme: slate
+      primary: teal
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: ライトモードへ切り替え
+
+# フッターのソーシャルリンク
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Tminor7
+      name: GitHub
+    - icon: fontawesome/brands/orcid
+      link: https://orcid.org/0000-0002-4222-4569
+      name: ORCID
+    - icon: fontawesome/solid/book-medical
+      link: https://researchmap.jp/tomo07
+      name: Researchmap
+    - icon: fontawesome/brands/researchgate
+      link: https://www.researchgate.net/profile/Tomohiro-Kikuchi-2
+      name: ResearchGate
+
 markdown_extensions:
   - admonition
   - pymdownx.details
+  - pymdownx.superfences
   - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
